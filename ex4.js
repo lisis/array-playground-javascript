@@ -1,5 +1,6 @@
 /**
- * indexOF
+ * indexOF: https://www.w3schools.com/jsref/jsref_indexof_array.asp
+ * 
  */
 
  /**
