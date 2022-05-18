@@ -18,11 +18,11 @@ for (let nombre of nombres) {
  * https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  */
 
-// let notasExamen = [5, 4.5, 9, 10, 2.3];
+let notasExamen = [5, 4.5, 9, 10, 2.3];
 
-// notasExamen.forEach(function (nota) {
-//     console.log(nota);
-// })
+notasExamen.forEach(function (nota) {
+    console.log(nota);
+})
 
 // RETO: Sabríamos modificar este código para que muestre por consola la nota media
 

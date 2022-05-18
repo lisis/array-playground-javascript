@@ -5,7 +5,7 @@
 // 2. Para modificar cada elemento del array...
 
 // En el siguiente ejemplo, iteramos el array 'razas_gatos'. 
-// Analicemos el bucloe:
+// Analicemos el bucle:
 
 // Contador inicial: let i = 0
 // Incremento: i++
@@ -13,6 +13,6 @@
 
 let razas_gatos = ['Siamés', 'Egipcio', "Vulgaris", 'Persa']
 
-for (let i=0; i<razas_gatos.length; i++) {
+for (let i = 0; i < razas_gatos.length; i++) {
     console.log(razas_gatos[i]) // En la primera iterazión, accedemos a razas_gatos[0]. En la segundam a razas_gatos[1].... así hasta razas_gatos[3]
 }
