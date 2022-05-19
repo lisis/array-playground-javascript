@@ -34,6 +34,11 @@
                     <td>Johnson</td>
                     <td class="ingreso">67</td>
                 </tr>
+                <tr>
+                    <td class="nombre">Maullidos</td>
+                    <td>Rachel</td>
+                    <td class="ingreso">12</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -55,6 +60,27 @@
         /**
          * Ejercicio 1: Recorre ahora todas las celdas de los ingresos y muestrálos por el terminal, similar al ejemplo.
          */
+
+        let ingresos = document.querySelectorAll(".ingreso");
+        console.log("cantidad de ingresos: ", ingresos.length);
+
+        let total = 0;
+
+        for (let i = 0; i < ingresos.length; i++) {
+            // Porque uso esta variable intermedia? porque siguienteIngreso me da más información del tipo de valor que estoy recuperando de ingresos[i].textContent
+            let siguienteIngreso = ingresos[i].textContent;
+
+            // Necesitamos usar la función Number para convertir siguienteIngreso en un number, porque TODO lo que recuperamos del HTML a través de textContent, es de tipo string 
+            total = total + Number(siguienteIngreso);
+        }
+
+        document.querySelector("#ingresos").textContent = total;
+
+
+
+
+
+
 
         /**
          * Ejercicio 2: Amplia el ejercicio 1, y ahora SUMA el valor de todos los ingresos y pon el resultado en <span id="ingresos">. RECUERDA primero escribir lo que quieres hacer, qué variables vas a necesitar, con lenguaje natural. Después, usa JavaScript
